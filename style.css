@@ -1,12 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#inicio{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/keyboard-3685823_1920.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+
+}
+ header {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.contenido_header{
+    max-width: 1100px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items:  center;
+    padding: 10px 20px;
+    
+}
 
 
+#botones{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
 
+rss a img {
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+}
 
-
-
-
-
-
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px; /* margen horizontal para separar */
+    font-weight: 500;
+    transition: color 0.5s ease; /* ejemplo, transición para color */
+    letter-spacing: 0.5px; /* opcional para que las letras no estén tan pegadas */
+}
 
 
 #icono_hamburguesa img {
