@@ -163,7 +163,7 @@ h2 span{
     background-size: contain;
     background-position: center;
     width: 100%;
-    min-height: 900px;
+    min-height: 890px;
     margin: 0;
     padding: 0;
 
@@ -172,6 +172,9 @@ h2 span{
     margin-top: 0;
     margin-bottom: 0;
     color: crimson;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
     
 }
 
@@ -179,19 +182,85 @@ h2 span{
     display: flex;
     gap: 20px;
     justify-content: space-around;
+    margin-top: 60px;
+
 
 }
 .primero h3{
     font-size: 2rem;
     text-decoration: underline;
-    margin-top: 60px;
+    margin-top: 0px;
 }
 
 .primero h3, h4, p{
     color: #fff;
+    text-align: center;
+    max-width: 300px;
 }
 
 .imagen1 img{
     width: 200x;
+    height: 200px;
+}
+
+
+.segundo{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-left: 0px;
+
+}
+
+
+.segundo h3{
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-top: 0px;
+    color: #fff;
+}
+
+.segundo h4, p{
+    color: #fff;
+    text-align: center;
+    max-width: 300px;
+    margin-left: 80px;
+    font-weight: bold;
+    
+}
+
+.segundo img{
+    width: 200px;
+    height: 200px;
+}
+.tercero{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-left: 0px;
+
+}
+
+
+.tercero h3{
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-top: 0px;
+    color: #fff;
+}
+
+.tercero h4, p{
+    color: #fff;
+    text-align: center;
+    max-width: 300px;
+    margin-left: 80px;
+    font-weight: bold;
+    
+}
+
+.tercero img{
+    width: 200px;
     height: 200px;
 }
