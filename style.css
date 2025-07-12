@@ -11,7 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
-#inicio{
+#Inicio{
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/keyboard-3685823_1920.jpg");
     background-size: cover;
     background-position: center center;
@@ -101,21 +101,23 @@ nav li a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
     
  }
 .Bienvenida {
     color: #fff;
     font-size: 1.5rem;
-    
-
+    font-weight: bold;
 }
+
+
 
  h2{
     font-size: 35px;
     letter-spacing: 5px;
     color: #fff;
     margin-top: 25px;
+    text-align: center;
 
 }
 
@@ -125,4 +127,71 @@ h2 span{
 
 }
 
-.descripcion
+.descripcion{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    max-width: 900px;
+    text-align: center;
+}
+
+.presentacion a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 30px 35px;
+    color: #fff;
+    border: 2px solid ;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.presentacion a:hover{
+    background-color: crimson;
+}
+
+#Proyectos{
+    margin: 0;
+    padding: 0;
+
+}
+
+.proyectos{
+    background-image: url(images/hacker-4031973_1920.jpg);
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    min-height: 900px;
+    margin: 0;
+    padding: 0;
+
+}
+.proyectos h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: crimson;
+    
+}
+
+.primero{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+
+}
+.primero h3{
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-top: 60px;
+}
+
+.primero h3, h4, p{
+    color: #fff;
+}
+
+.imagen1 img{
+    width: 200x;
+    height: 200px;
+}
