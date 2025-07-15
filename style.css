@@ -106,8 +106,9 @@ nav li a:hover{
  }
 .Bienvenida {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
+    text-align: center;
 }
 
 
@@ -174,8 +175,6 @@ h2 span{
     color: crimson;
     text-decoration: underline;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    
 }
 
 .primero{
@@ -264,3 +263,8 @@ h2 span{
     width: 200px;
     height: 200px;
 }
+ 
+
+ 
+
+ 
