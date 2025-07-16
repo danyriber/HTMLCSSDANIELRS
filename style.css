@@ -164,7 +164,7 @@ h2 span{
     background-size: contain;
     background-position: center;
     width: 100%;
-    min-height: 890px;
+    height: 110vh;
     margin: 0;
     padding: 0;
 
@@ -172,7 +172,7 @@ h2 span{
 .proyectos h2{
     margin-top: 0;
     margin-bottom: 0;
-    color: crimson;
+    color: rgb(237, 227, 229);
     text-decoration: underline;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -264,7 +264,42 @@ h2 span{
     height: 200px;
 }
  
+#Curriculum {
+    background-image: url("images/teclado.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
- 
+.contenedor-curriculum {
+    display: flex;
+    max-width: 950px;
+    background-color: rgba(0, 0, 0, 0.626);
+    border-radius: 20px;
+    padding: 10px; 
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    align-items: center;
+    gap: 70px; 
+    }
+    
 
- 
+.descripcion-cv {
+    color: white;
+    font-size: 1.3rem;
+     
+}
+
+
+
+.imagen-cv {
+    max-height: 90vh;
+}
+
+.imagen-cv img {
+    max-width: 100%;
+    max-height: 90vh; 
+    border-radius: 12px;
+}
