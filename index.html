@@ -1,111 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portfolio personal</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section id="Inicio">
-    <div class="contenido">
-        <header>
-            <div class="contenido_header">
-            <div id="icono_hamburguesa">
-            <img src="icons/bars-solid.svg" alt="menu_hamburguesa">
-            </div>
-                <nav id="navegacion" class="navegacion_menu">
-                    <ul id="botones">
-                        <li> <a href="#Inicio">INICIO</a></li>
-                        <li> <a href="#Proyectos">PROYECTOS</a></li>
-                        <li> <a href="#Curriculum">CURRICULUM</a></li>
-                        <li> <a href="#Contacto">CONTACTO</a></li>
-                        <li> <a href="#Intereses-Personales">INTERESES PERSONALES</a></li>
-                    </ul>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="contenido_header">
+        <div id="icono_hamburguesa">
+          <img src="icons/bars-solid.svg" alt="Menú Hamburguesa" />
+        </div>
+        <nav id="navegacion" class="navegacion_menu">
+          <ul id="botones">
+            <li><a href="#Inicio">INICIO</a></li>
+            <li><a href="#SobreMi">SOBRE MÍ</a></li>
+            <li><a href="#Proyectos">PROYECTOS</a></li>
+            <li><a href="#Curriculum">CURRÍCULUM</a></li>
+            <li><a href="#Contacto">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-                </nav>
-                <div class="rss">
-                    <a href="#"><img src="icons/facebook_icon.svg" alt="Facebook"></a>
-                    <a href="#"><img src="icons/instagram-brands.svg" alt="Instagram"></a>
-                    <a href="#"><img src="icons/youtube-brands.svg" alt="Youtube"></a>
-                </div>
-            </div>
-        </header>
-       
+    <main>
+      <section id="Inicio">
         <div class="presentacion">
-            <p class="Bienvenida">Bienvenidos</p>
-            <h2>Me llamo <span>Daniel Ribeiro</span>, soy Administrador de Sistemas y Redes</h2>
-            <p class="descripcion"> Administrador de sistemas y redes con experiencia en configuración, mantenimiento y optimización de infraestructuras IT. 
-                Especializado en seguridad, resolución de incidencias y soporte técnico eficiente. 
-                Apasionado por implementar soluciones innovadoras que mejoran el rendimiento y la conectividad empresarial.</p>
-            <a href="#Portfolio">Ir a Portfolio</a>
+          <p class="Bienvenida">Bienvenidos</p>
+          <h1>
+            Me llamo <span>Daniel Ribeiro</span>, soy Administrador de Sistemas
+            y Redes
+          </h1>
+          <p class="descripcion">
+            Administrador de sistemas y redes con experiencia en configuración,
+            mantenimiento y optimización de infraestructuras IT. Especializado
+            en seguridad, resolución de incidencias y soporte técnico eficiente.
+            Apasionado por implementar soluciones innovadoras que mejoran el
+            rendimiento y la conectividad empresarial.
+          </p>
 
+          <a href="cv.pdf" download class="btn-cv">Descargar CV</a>
         </div>
+      </section>
 
-    </div>
-    </section>
-    <section id="Proyectos">
-        <div class="proyectos">
-            <h2>Mis Proyectos Personales</h2>
-            <div class="primero">
-                <h3 class="Coworking">Coworking Connect</h3>
-                <h4>Crear una LAN escalable para 60 puestos + salas de reuniones, con VLANs, enlaces troncales 802.1Q, PoE para VoIP y firewall perimetral.</h4>
-                <p class="first">
-                    • Segmentación por roles y QoS
-                    • Configuración de switches Layer 2/3 (CLI Cisco/HP)
-                    • Diagramación de topologías y documentación.
-                </p>
-                <figure class="imagen1">
-                    <img src="images/Network-Topology-Architectures.jpg" alt="topology">
-
-                </figure>
-            </div>
-            <div class="segundo">
-                <h3 class="Rack">Rack Revamp</h3>
-                <h4>Organizar de cero un rack 42U: ruteo de patch‑cords, etiquetado y gestión térmica sin provocar downtime</h4>
-                <p class="second">
-                    • Normas TIA‑568/569
-                    • Uso de patch‑panels, bandejas y guías
-                    • Mejores prácticas de cableado y auditoría post‑implantación.
-                </p>
-                <figure class="imagen2">
-                   <img src="images/Example-of-rack-cable-management.jpg" alt="">
-
-                </figure>
-
-            </div>
-            <div class="tercero">
-                <h3 class="wifi">Wi-Fi Edu Net</h3>
-                <h4>Levantar un heatmap, reubicar APs UniFi, elegir canales y potencias para cubrir aulas y pasillos sin solapamientos.</h4>
-                <p class="third">
-                    • Normas TIA‑568/569
-                    • Uso de patch‑panels, bandejas y guías
-                    • Mejores prácticas de cableado y auditoría post‑implantación.
-                </p>
-                <figure class="imagen3">
-                   <img src="images/netspot_sir.png" alt="netspot">
-
-                </figure>
-
-            </div>
+      <section id="SobreMi">
+        <div class="yo">
+          <h2>Sobre Mí</h2>
+          <p>
+            Soy Daniel Ribeiro, Administrador de Sistemas y Redes apasionado por
+            la tecnología y la ciberseguridad. Me dedico a diseñar y optimizar
+            infraestructuras IT, ofreciendo soluciones innovadoras que mejoran
+            la conectividad y el rendimiento.
+          </p>
+          <p>
+            Mi objetivo es seguir creciendo profesionalmente en el ámbito de las
+            redes y la ciberseguridad, aprendiendo cada día nuevas herramientas
+            y tendencias tecnológicas.
+          </p>
         </div>
+      </section>
 
-    </section>
-    <section id="Curriculum">
+      <section id="Proyectos">
+        <h2>Mis Proyectos Personales</h2>
+        <div class="grid-proyectos">
+          <article class="card">
+            <img
+              src="images/Network-Topology-Architectures.jpg"
+              alt="Diagrama de topología de red"
+            />
+            <h3>Coworking Connect</h3>
+            <p>
+              LAN escalable para 60 puestos con VLANs, enlaces troncales 802.1Q,
+              PoE y firewall perimetral.
+            </p>
+          </article>
+          <article class="card">
+            <img
+              src="images/Example-of-rack-cable-management.jpg"
+              alt="Rack organizado con cables estructurados"
+            />
+            <h3>Rack Revamp</h3>
+            <p>
+              Organización completa de rack 42U: cableado ordenado, etiquetado y
+              gestión térmica profesional.
+            </p>
+          </article>
+          <article class="card">
+            <img
+              src="images/netspot_sir.png"
+              alt="Mapa de calor para optimización Wi-Fi en aulas"
+            />
+            <h3>Wi-Fi Edu Net</h3>
+            <p>
+              Heatmap y optimización de APs UniFi para cobertura sin
+              solapamientos en aulas y pasillos.
+            </p>
+          </article>
+          <article class="card">
+            <img
+              src="images/OIP.jpg"
+              alt="Representación visual de migración a la nube"
+            />
+            <h3>Cloud Secure Deployment</h3>
+            <p>
+              Migración de servidores on-premise a la nube con alta
+              disponibilidad, backups y cifrado extremo.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="Curriculum">
         <div class="contenedor-curriculum">
-            <div class="descripcion-cv">
-                
-                <p>
-                Soy un profesional con sólida experiencia en administración de sistemas, redes y soporte técnico. Aquí puedes ver una muestra visual de mi currículum profesional.
-                </p>
-            </div>
-
-            <div class="imagen-cv">
-                <img src="images/curriculum.png" alt="Foto del currículum de Daniel Ribeiro Souza">
-            </div>
+          <div class="descripcion-cv">
+            <p>
+              Soy un profesional con sólida experiencia en administración de
+              sistemas, redes y soporte técnico. Aquí puedes ver una muestra
+              visual de mi currículum profesional.
+            </p>
+          </div>
+          <div class="imagen-cv">
+            <img
+              src="images/curriculum.png"
+              alt="Currículum de Daniel Ribeiro Souza"
+            />
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-    
-</body>
+    <footer>
+      <p>&copy; 2025 Daniel Ribeiro. Todos los derechos reservados.</p>
+    </footer>
+  </body>
 </html>

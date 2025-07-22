@@ -1,24 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-#Inicio{
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/keyboard-3685823_1920.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-
+:root {
+  --color-principal: crimson;
+  --color-texto: #ffff;
+  --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --sombra-principal: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
- header {
+#Inicio {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/keyboard-3685823_1920.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+header {
   background-color: rgba(0, 0, 0, 0.35);
   position: fixed;
   width: 100%;
@@ -27,279 +31,237 @@ html{
   z-index: 100;
 }
 
-.contenido_header{
-    max-width: 1100px;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    align-items:  center;
-    padding: 10px 20px;
-   
+.contenido_header {
+  max-width: 1100px;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-
-#botones{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    gap: 40px;
-    
-
+#botones {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+  flex-wrap: wrap;
 }
-
 
 nav li a {
-    text-decoration: none;
-    color: #fff;
-    margin: 0 12px; 
-    font-weight: 500;
-    transition: color 0.5s ease; 
-    text-align: center;
-
+  text-decoration: none;
+  color: var(--color-texto);
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.5s ease;
+  text-align: center;
 }
 
-nav li a:hover{
-    color: crimson;
+nav li a:hover {
+  color: var(--color-principal);
 }
 .rss {
-    background-color: #ffff; 
-    padding: 8px 12px; 
-    border-radius: 8px; 
-    display: inline-flex; 
-    gap: 36px; 
-    
+  background-color: var(--color-texto);
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 36px;
 }
 
 #icono_hamburguesa img {
   width: 24px;
   height: 24px;
-  background-color: #fff;
+  background-color: var(--color-texto);
   display: flex;
   align-items: center;
   justify-content: flex-start;
   cursor: pointer;
 }
- .rss a img{
-    width: 24px;
-    height: 24px;
-    flex: 0 0 100px; 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;
-    
- }
-
- .presentacion{
-    max-width: 1100px;
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    
- }
-.Bienvenida {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
+.rss a img {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
 }
 
+.presentacion {
+  max-width: 1100px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Bienvenida {
+  color: var(--color-texto);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
 
-
- h2{
+#Inicio h1, #Inicio h2 {
     font-size: 35px;
     letter-spacing: 5px;
-    color: #fff;
+    color: var(--color-texto);
     margin-top: 25px;
     text-align: center;
-
 }
 
-h2 span{
-    color: crimson;
+#Inicio h1 span, #Inicio h2 span {
+    color: var(--color-principal);
     font-size: 20px;
-
 }
 
-.descripcion{
-    font-size: 20px;
-    color: #fff;
-    margin-top: 20px;
-    max-width: 900px;
-    text-align: center;
+.descripcion {
+  font-size: 20px;
+  color: var(--color-texto);
+  margin-top: 20px;
+  max-width: 900px;
+  text-align: center;
 }
 
-.presentacion a{
-    text-decoration: none;
-    display: inline-block;
-    margin: 25px;
-    padding: 30px 35px;
-    color: #fff;
-    border: 2px solid ;
-    border-radius: 50px;
-    color: #fff;
-    font-weight: bold;
-    transition: 0.5s;
+.presentacion a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 25px;
+  padding: 30px 35px;
+  color: var(--color-texto);
+  border: 2px solid;
+  border-radius: 50px;
+  color: var(--color-texto);
+  font-weight: bold;
+  transition: 0.5s;
 }
 
-.presentacion a:hover{
-    background-color: crimson;
+.presentacion a:hover {
+  background-color: var(--color-principal);
 }
 
-#Proyectos{
-    margin: 0;
-    padding: 0;
-
+#SobreMi {
+    padding: var(--padding-seccion) 20px;
+    background: url(images/technology-298256_1920.jpg);
+    color: var(--color-texto);
 }
 
-.proyectos{
-    background-image: url(images/hacker-4031973_1920.jpg);
-    background-size: contain;
-    background-position: center;
-    width: 100%;
-    height: 110vh;
-    margin: 0;
-    padding: 0;
-
-}
-.proyectos h2{
-    margin-top: 0;
-    margin-bottom: 0;
-    color: rgb(237, 227, 229);
-    text-decoration: underline;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.primero{
+.yo{
     display: flex;
-    gap: 20px;
-    justify-content: space-around;
-    margin-top: 60px;
-
-
-}
-.primero h3{
-    font-size: 2rem;
-    text-decoration: underline;
-    margin-top: 0px;
-}
-
-.primero h3, h4, p{
-    color: #fff;
-    text-align: center;
-    max-width: 300px;
-}
-
-.imagen1 img{
-    width: 200x;
-    height: 200px;
-}
-
-
-.segundo{
-    display: flex;
-    gap: 20px;
-    justify-content: space-around;
-    margin-top: 60px;
-    margin-left: 0px;
-
-}
-
-
-.segundo h3{
-    font-size: 2rem;
-    text-decoration: underline;
-    margin-top: 0px;
-    color: #fff;
-}
-
-.segundo h4, p{
-    color: #fff;
-    text-align: center;
-    max-width: 300px;
-    margin-left: 80px;
-    font-weight: bold;
-    
-}
-
-.segundo img{
-    width: 200px;
-    height: 200px;
-}
-.tercero{
-    display: flex;
-    gap: 20px;
-    justify-content: space-around;
-    margin-top: 60px;
-    margin-left: 0px;
-
-}
-
-
-.tercero h3{
-    font-size: 2rem;
-    text-decoration: underline;
-    margin-top: 0px;
-    color: #fff;
-}
-
-.tercero h4, p{
-    color: #fff;
-    text-align: center;
-    max-width: 300px;
-    margin-left: 80px;
-    font-weight: bold;
-    
-}
-
-.tercero img{
-    width: 200px;
-    height: 200px;
-}
- 
-#Curriculum {
-    background-image: url("images/teclado.jpg"); 
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: var(--sombra-principal);
+
+}
+
+
+#Proyectos {
+  background: url("images/hacker-4031973_1920.jpg") center/cover no-repeat;
+  padding: 80px 20px;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#Proyectos h2 {
+  text-align: center;
+  color: var(--color-texto);
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: var(--sombra-principal);
+}
+
+/* GRID */
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.card {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: 0,7s;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: var(--color-principal);
+  font-size: 1.5rem;
+  margin: 15px 0 10px;
+}
+
+.card p {
+  color: var(--color-texto);
+  font-size: 1rem;
+  padding: 0 15px;
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+#Curriculum {
+  background-image: url("images/teclado.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contenedor-curriculum {
-    display: flex;
-    max-width: 950px;
-    background-color: rgba(0, 0, 0, 0.626);
-    border-radius: 20px;
-    padding: 10px; 
-    box-shadow: 0 0 30px rgba(0,0,0,0.7);
-    align-items: center;
-    gap: 70px; 
-    }
-    
-
-.descripcion-cv {
-    color: white;
-    font-size: 1.3rem;
-     
+  display: flex;
+  max-width: 1300px;
+  background-color: rgba(0, 0, 0, 0.626);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  align-items: center;
+  gap: 70px;
 }
 
-
+.descripcion-cv {
+  color: var(--color-texto);
+  font-size: 1.3rem;
+  text-align: justify;
+  max-width: 350px;
+}
 
 .imagen-cv {
-    max-height: 90vh;
+  max-height: 90vh;
 }
 
 .imagen-cv img {
-    max-width: 100%;
-    max-height: 90vh; 
-    border-radius: 12px;
+  max-width: 400px;
+  max-height: 90vh;
+  border-radius: 12px;
 }
