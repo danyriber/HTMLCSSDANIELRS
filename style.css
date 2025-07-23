@@ -12,7 +12,7 @@ html {
 :root {
   --color-principal: crimson;
   --color-texto: #ffff;
-  --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --fuente-principal: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --sombra-principal: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 #Inicio {
@@ -22,6 +22,8 @@ html {
   background-position: center center;
   height: 100vh;
 }
+
+
 header {
   background-color: rgba(0, 0, 0, 0.35);
   position: fixed;
@@ -106,17 +108,19 @@ nav li a:hover {
   text-align: center;
 }
 
-#Inicio h1, #Inicio h2 {
-    font-size: 35px;
-    letter-spacing: 5px;
-    color: var(--color-texto);
-    margin-top: 25px;
-    text-align: center;
+#Inicio h1,
+#Inicio h2 {
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: var(--color-texto);
+  margin-top: 25px;
+  text-align: center;
 }
 
-#Inicio h1 span, #Inicio h2 span {
-    color: var(--color-principal);
-    font-size: 20px;
+#Inicio h1 span,
+#Inicio h2 span {
+  color: var(--color-principal);
+  font-size: 20px;
 }
 
 .descripcion {
@@ -145,30 +149,28 @@ nav li a:hover {
 }
 
 #SobreMi {
-    background: url(images/technology-298256_1920.jpg);
-    color: var(--color-texto);
+  background: url(images/technology-298256_1920.jpg);
+  color: var(--color-texto);
 }
 
-.yo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    height: 100vh;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: var(--sombra-principal);
-
+.yo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: var(--sombra-principal);
 }
-
 
 #Proyectos {
   background: url("images/hacker-4031973_1920.jpg") center/cover no-repeat;
   padding: 80px 20px;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,14 +195,13 @@ nav li a:hover {
   margin: 0 auto;
 }
 
-
 .card {
   background: rgba(0, 0, 0, 0.75);
   border-radius: 15px;
   overflow: hidden;
   text-align: center;
   padding-bottom: 20px;
-  transition: 0,7s;
+  transition: 0, 7s;
 }
 
 .card img {
@@ -220,7 +221,6 @@ nav li a:hover {
   font-size: 1rem;
   padding: 0 15px;
 }
-
 
 .card:hover {
   transform: translateY(-10px);
@@ -272,37 +272,61 @@ nav li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
 
-.contacto-contenedor{
+.contacto-contenedor {
   display: flex;
   flex-direction: column;
   gap: 70px;
   font-size: 2rem;
   align-items: center;
-  
- }
+}
 
 #Contacto h2,
 #Contacto p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight:lighter;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   color: #222;
-  
 }
 
-p{
+p {
   max-width: 600px;
 }
 
-.formulario-contacto input{
+.formulario-contacto input {
   width: 50%;
+  border: 3px solid black;
 }
 .formulario-contacto textarea {
   width: 100%;
-  border: 2px solid black;
+  border: 3px solid black;
   margin: 20px;
+  resize: none;
+  display: flex;
+  align-items: center;
+
+}
+
+.boton-enviar{
+  background-color: var(--color-principal);
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 3px solid black;
+  color: var(--color-texto);
+  font-weight: bold;
+  
+
+}
+@media (max-width: 500px) {
+  #Inicio {
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+
+
   
 }
