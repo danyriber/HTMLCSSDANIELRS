@@ -145,7 +145,6 @@ nav li a:hover {
 }
 
 #SobreMi {
-    padding: var(--padding-seccion) 20px;
     background: url(images/technology-298256_1920.jpg);
     color: var(--color-texto);
 }
@@ -264,4 +263,46 @@ nav li a:hover {
   max-width: 400px;
   max-height: 90vh;
   border-radius: 12px;
+}
+
+#Contacto {
+  background: url("images/meet-1019875_1920.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.contacto-contenedor{
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  font-size: 2rem;
+  align-items: center;
+  
+ }
+
+#Contacto h2,
+#Contacto p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight:lighter;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  color: #222;
+  
+}
+
+p{
+  max-width: 600px;
+}
+
+.formulario-contacto input{
+  width: 50%;
+}
+.formulario-contacto textarea {
+  width: 100%;
+  border: 2px solid black;
+  margin: 20px;
+  
 }
