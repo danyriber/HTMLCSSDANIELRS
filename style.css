@@ -60,6 +60,7 @@ nav li a {
   font-weight: 500;
   transition: color 0.5s ease;
   text-align: center;
+  display: none;
 }
 
 nav li a:hover {
@@ -330,3 +331,10 @@ p {
 
   
 }
+@media (min-width: 478px) {
+  nav li a {
+    display: flex;
+  }
+
+}
+
