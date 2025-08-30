@@ -338,3 +338,51 @@ p {
 
 }
 
+#navegacion {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px 16px;
+  z-index: 200;
+}
+
+#navegacion.abierto {
+  display: block;
+}
+
+#navegacion.abierto #botones {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#navegacion.abierto li a {
+  display: block;
+  padding: 10px 8px;
+}
+
+@media (min-width: 768px) {
+  #icono_hamburguesa {
+    display: none;
+  }
+
+  #navegacion {
+    display: block;
+    position: static;
+    background: transparent;
+    padding: 0;
+  }
+
+  #botones {
+    display: flex;
+    gap: 40px;
+  }
+
+  nav li a {
+    display: inline-flex;
+  }
+}
+
