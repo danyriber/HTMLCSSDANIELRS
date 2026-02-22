@@ -7,14 +7,24 @@
 
 html {
   scroll-behavior: smooth;
+
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 :root {
   --color-principal: crimson;
   --color-texto: #ffff;
   --fuente-principal: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --sombra-principal: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  --color-secundario: #1e90ff;
+
 }
+
+
 #Inicio {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("images/keyboard-3685823_1920.jpg");
@@ -22,7 +32,6 @@ html {
   background-position: center center;
   height: 100vh;
 }
-
 
 header {
   background-color: rgba(0, 0, 0, 0.35);
@@ -32,7 +41,6 @@ header {
   left: 0;
   z-index: 100;
 }
-
 .contenido_header {
   max-width: 1100px;
   display: flex;
@@ -47,8 +55,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  margin: 0;
   gap: 40px;
   flex-wrap: wrap;
 }
@@ -66,13 +72,6 @@ nav li a {
 nav li a:hover {
   color: var(--color-principal);
 }
-.rss {
-  background-color: var(--color-texto);
-  padding: 8px 12px;
-  border-radius: 8px;
-  display: inline-flex;
-  gap: 36px;
-}
 
 #icono_hamburguesa img {
   width: 24px;
@@ -82,15 +81,6 @@ nav li a:hover {
   align-items: center;
   justify-content: flex-start;
   cursor: pointer;
-}
-.rss a img {
-  width: 24px;
-  height: 24px;
-  flex: 0 0 100px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
 }
 
 .presentacion {
@@ -102,6 +92,7 @@ nav li a:hover {
   align-items: center;
   flex-direction: column;
 }
+
 .Bienvenida {
   color: var(--color-texto);
   font-size: 2rem;
@@ -131,16 +122,15 @@ nav li a:hover {
   max-width: 900px;
   text-align: center;
 }
-
 .presentacion a {
   text-decoration: none;
   display: inline-block;
   margin: 25px;
   padding: 30px 35px;
-  color: var(--color-texto);
   border: 2px solid;
   border-radius: 50px;
   color: var(--color-texto);
+  font-weight: bold;
   font-weight: bold;
   transition: 0.5s;
 }
@@ -187,7 +177,6 @@ nav li a:hover {
   text-shadow: var(--sombra-principal);
 }
 
-/* GRID */
 .grid-proyectos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -202,7 +191,7 @@ nav li a:hover {
   overflow: hidden;
   text-align: center;
   padding-bottom: 20px;
-  transition: 0, 7s;
+  transition: 0.7s;
 }
 
 .card img {
@@ -226,6 +215,7 @@ nav li a:hover {
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+
 }
 
 #Curriculum {
@@ -237,7 +227,6 @@ nav li a:hover {
   justify-content: center;
   align-items: center;
 }
-
 .contenedor-curriculum {
   display: flex;
   max-width: 1300px;
@@ -300,42 +289,57 @@ p {
   width: 50%;
   border: 3px solid black;
 }
+
 .formulario-contacto textarea {
   width: 100%;
   border: 3px solid black;
   margin: 20px;
   resize: none;
-  display: flex;
-  align-items: center;
-
 }
 
-.boton-enviar{
+.boton-enviar {
   background-color: var(--color-principal);
   padding: 10px 15px;
   border-radius: 8px;
   border: 3px solid black;
   color: var(--color-texto);
   font-weight: bold;
-  
-
 }
-@media (max-width: 500px) {
-  #Inicio {
-    height: auto;
-    padding: 20px 10px;
-    text-align: center;
-  }
 
-
-
-  
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  color: var(--color-texto);
+  text-align: center;
+  padding: 20px 16px;
 }
+
+.footer-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.redes {
+  display: flex;
+  gap: 18px;
+}
+
+.redes img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+  transition: 0.3s;
+}
+
+.redes img:hover {
+  transform: scale(1.15);
+}
+
 @media (min-width: 478px) {
   nav li a {
     display: flex;
   }
-
 }
 
 #navegacion {
@@ -386,3 +390,70 @@ p {
   }
 }
 
+body {
+  padding-top: 56px;
+}
+
+#Inicio,
+.presentacion,
+.yo,
+#Curriculum {
+  min-height: 100vh;
+  height: auto;
+  padding: 64px 16px;
+}
+
+@media (max-width: 500px) {
+  #Inicio {
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .Bienvenida {
+    font-size: 1.5rem;
+  }
+
+  #Inicio h1 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+
+  .descripcion {
+    font-size: 1rem;
+  }
+
+  .grid-proyectos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contenedor-curriculum {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .descripcion-cv {
+    font-size: 1rem;
+    max-width: none;
+    text-align: left;
+  }
+
+  .imagen-cv img {
+    max-width: 100%;
+  }
+
+  .contacto-contenedor {
+    gap: 24px;
+    font-size: 1.2rem;
+  }
+
+  #Contacto h2,
+  #Contacto p {
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
+}
